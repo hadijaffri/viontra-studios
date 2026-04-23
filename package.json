@@ -1,0 +1,14 @@
+{
+  "name": "viontra-studios",
+  "version": "0.1.0",
+  "description": "All-in-one AI-powered creative + development studio. Runs entirely in the browser with an offline LLM (WebLLM / Transformers.js), a curated knowledge base, and a composer template library.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "python3 -m http.server 8080",
+    "build": "echo 'No build step — static ES modules.'"
+  },
+  "keywords": ["ai", "studio", "browser", "llm", "webllm", "offline", "vercel"],
+  "author": "Hadi Jaffri",
+  "license": "MIT"
+}

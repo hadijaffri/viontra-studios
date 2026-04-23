@@ -1,0 +1,172 @@
+// English language reference article for the offline knowledge base.
+
+export const englishArticle = {
+  id: "english",
+  title: "English",
+  keywords: [
+    "english", "language", "anglo-saxon", "old english", "middle english",
+    "modern english", "germanic", "indo-european", "lingua franca",
+    "shakespeare", "great vowel shift", "rp", "received pronunciation",
+    "general american", "british english", "american english",
+  ],
+  summary:
+    "English is a West Germanic language of the Indo-European family. It originated in early medieval England, became a global lingua franca through the British Empire and US influence, and is now spoken by ~1.4 billion people — more second-language speakers than native ones.",
+  sections: [
+    {
+      id: "overview",
+      title: "What is English",
+      keywords: ["english", "what", "language", "germanic", "global"],
+      body: "English is a West Germanic language descended from the dialects of the Angles, Saxons, and Jutes who settled Britain after Roman rule ended. Today it's the most-spoken language in the world (third by native speakers after Mandarin and Spanish, but first by total speakers), the official or co-official language of 57 sovereign states, and the de facto lingua franca of diplomacy, science, aviation, the internet, and international business.",
+    },
+    {
+      id: "classification",
+      title: "Classification",
+      keywords: ["classification", "indo-european", "germanic", "west germanic"],
+      body: "English belongs to the West Germanic branch of the Germanic languages, within the Indo-European family. Its closest relatives are Scots (a sister Anglic language), Frisian, Low Saxon, and more distantly Dutch and German. It shares Germanic features like the strong/weak verb distinction, modal verbs, and the consonant shifts described by Grimm's and Verner's laws.",
+    },
+    {
+      id: "old-english",
+      title: "Old English (c. 450–1150)",
+      keywords: ["old english", "anglo-saxon", "beowulf", "wessex", "alfred"],
+      body: "Old English (Anglo-Saxon) was a heavily inflected Germanic language with grammatical case on nouns, adjectives, and pronouns — much closer to modern German than to modern English. It was divided into four main dialects (Mercian, Northumbrian, Kentish, West Saxon); West Saxon became the standard literary form under King Alfred. Beowulf and Cædmon's Hymn are the famous surviving Old English poems. A 21st-century English speaker cannot understand Old English without training.",
+    },
+    {
+      id: "norse-influence",
+      title: "Old Norse influence",
+      keywords: ["norse", "viking", "danelaw", "they", "them"],
+      body: "Viking colonisation in the 8th–11th centuries put Old English speakers in heavy contact with Old Norse, especially in the Danelaw around York. Norse displaced Anglo-Saxon vocabulary in many cases — give, get, sky, skirt, egg, cake, leg, window, husband. The most consequential borrowing was the third-person plural pronouns they/them/their, which replaced the native h-forms (hie, him, hera).",
+    },
+    {
+      id: "middle-english",
+      title: "Middle English (c. 1150–1500)",
+      keywords: ["middle english", "norman", "1066", "chaucer", "french"],
+      body: "The Norman Conquest of 1066 layered Norman French onto English for centuries. While the lower classes stayed monolingual English, French was the prestige language of the court — leading to a massive lexical influx in law, government, food, and abstract concepts. Middle English shed most case endings, fixed word order toward SVO, and produced Chaucer's Canterbury Tales and Wycliffe's Bible.",
+    },
+    {
+      id: "great-vowel-shift",
+      title: "Great Vowel Shift",
+      keywords: ["great vowel shift", "vowel", "shift", "spelling"],
+      body: "Between roughly 1350 and 1700, the long stressed vowels of English rose by one position and the highest vowels broke into diphthongs — a chain shift. 'Bite' was once pronounced like modern 'beet'; 'about' had the vowel of modern 'boot'. English spelling was fixed before the shift completed, which is why the same vowel letters sound completely different in English than in other European languages.",
+    },
+    {
+      id: "early-modern-english",
+      title: "Early Modern English (1500–1700)",
+      keywords: ["early modern", "shakespeare", "kjv", "chancery", "caxton"],
+      body: "Early Modern English was shaped by the Great Vowel Shift, the introduction of the printing press by William Caxton in 1476, the standardising 'Chancery Standard' of London/East Midlands dialect, the works of Shakespeare, and the 1611 King James Bible. It still pronounced clusters like /kn ɡn sw/ in knight, gnat, sword, and used thou/thee/ye distinctions that are now archaic.",
+    },
+    {
+      id: "modern-english",
+      title: "Modern English",
+      keywords: ["modern english", "samuel johnson", "noah webster", "standardization"],
+      body: "Modern English is what we speak now. Samuel Johnson's 1755 Dictionary fixed British spelling; Noah Webster's 1828 American Dictionary deliberately created a distinct American standard. Grammatical case is almost entirely gone (only pronouns retain it), word order is locked SVO, and do-support became universal in questions and negations.",
+    },
+    {
+      id: "global-spread",
+      title: "Global spread",
+      keywords: ["global", "british empire", "lingua franca", "spread"],
+      body: "English spread first through the British Empire (commerce, colonial administration, education) and then through 20th-century US economic and cultural dominance plus broadcasters like the BBC. After WWII it became the working language of the UN, EU, NATO, and most international science. Estimates put total speakers around 1.4 billion — about 400 million native and 1 billion second-language.",
+    },
+    {
+      id: "three-circles",
+      title: "Kachru's three circles",
+      keywords: ["kachru", "circle", "inner", "outer", "expanding"],
+      body: "Linguist Braj Kachru groups English-using countries into three circles: the inner circle (UK, US, Canada, Australia, NZ, Ireland — native-speaker majorities), the outer circle (India, Nigeria, Singapore, Philippines, etc. — English as a key second language for education and government), and the expanding circle (countries where English is taught as a foreign language, e.g. Netherlands, Germany, China).",
+    },
+    {
+      id: "phonology",
+      title: "Phonology",
+      keywords: ["phonology", "consonant", "vowel", "phoneme"],
+      body: "Most English dialects share 24 consonant phonemes (or 26 counting marginal /x/ and the glottal stop). The vowel inventory varies hugely by dialect — Received Pronunciation has long/short distinctions like /iː/ vs /ɪ/ (need vs bid), while General American treats vowel length as non-phonemic. Stress is phonemic and free: 'CONtract' (noun) vs 'conTRACT' (verb).",
+    },
+    {
+      id: "rp-vs-ga",
+      title: "Received Pronunciation vs General American",
+      keywords: ["rp", "ga", "received pronunciation", "general american", "rhotic"],
+      body: "RP is the British prestige accent originally from south-east England; GA is the largely-Midwestern broadcast accent of the US. Big differences: GA is rhotic (pronounces /r/ everywhere — car, far), RP is non-rhotic (drops post-vocalic /r/). GA has the cot-caught merger and a flapped /t/ in 'water'. RP keeps four open vowels distinct (æ, ɑː, ɒ, ɔː); GA collapses to three; Canadian English to two.",
+    },
+    {
+      id: "grammar",
+      title: "Grammar overview",
+      keywords: ["grammar", "analytic", "svo", "case"],
+      body: "Modern English grammar is moderately analytic — case is almost gone, verb conjugation is minimal (only the third-person singular present takes -s), and meaning relies heavily on word order (SVO) and auxiliaries (do, have, be, will, can, may, etc.). Word classes typically split: verbs, nouns, adjectives, adverbs, determiners, prepositions, conjunctions, plus pronouns and interjections.",
+    },
+    {
+      id: "nouns",
+      title: "Nouns",
+      keywords: ["noun", "plural", "possessive", "count", "mass"],
+      body: "English nouns inflect only for number (cat/cats) and possession (the cat's tail). Most plurals add -s; irregulars survive in core vocabulary (man/men, mouse/mice, foot/feet, child/children, ox/oxen). Mass nouns (water, music, advice) don't pluralise directly — you need a count classifier: 'two pieces of advice'. Possession is shown by -'s for animates or 'of' for inanimates.",
+    },
+    {
+      id: "pronouns",
+      title: "Pronouns and case",
+      keywords: ["pronoun", "case", "subject", "object", "they"],
+      body: "Pronouns are the last stronghold of grammatical case in English. Personal pronouns distinguish subject (I, he, she, we, they) and object (me, him, her, us, them), with separate possessive forms (my/mine, his, her/hers, our/ours, their/theirs). 'You' covers both singular and plural in standard English, with regional plurals like y'all (Southern US) and youse (Australian/Liverpool). Singular 'they' for an unspecified-gender person is now mainstream.",
+    },
+    {
+      id: "verbs",
+      title: "Verbs — tense, aspect, mood",
+      keywords: ["verb", "tense", "aspect", "mood", "auxiliary"],
+      body: "English has only two morphological tenses (past and non-past — there's no future inflection; futurity is expressed with 'will' or 'going to'). Aspect is built with auxiliaries: progressive (be + -ing), perfect (have + past participle), and combinations ('had been being built'). Mood uses modal auxiliaries (can, may, will, shall, must) plus a vestigial subjunctive ('it is important that he go').",
+    },
+    {
+      id: "auxiliaries-do-support",
+      title: "Auxiliaries and do-support",
+      keywords: ["auxiliary", "do support", "negation", "question"],
+      body: "Auxiliary verbs (do, have, be, modals) carry the grammatical weight. Modern English requires 'do-support' for negation and questions of lexical verbs: 'Do you know him?' (not 'Know you him?'), 'I don't know' (not 'I know not'). Other syntactic operations — subject-auxiliary inversion, ellipsis, tag questions — also pivot on auxiliaries.",
+    },
+    {
+      id: "syntax",
+      title: "Syntax and word order",
+      keywords: ["syntax", "svo", "word order", "topic", "wh"],
+      body: "English is rigidly SVO — 'the dog bites the man' and 'the man bites the dog' mean opposite things only because of word order. Wh-questions front the interrogative word ('What did you see?'). Topic-comment structure is achieved by passives and cleft sentences ('It was the girl that the bee stung') since the topic usually has to be the grammatical subject.",
+    },
+    {
+      id: "vocabulary",
+      title: "Vocabulary and word formation",
+      keywords: ["vocabulary", "word", "lexicon", "compound", "neologism"],
+      body: "English has roughly 170,000–220,000 words in the OED; counting scientific jargon and technical acronyms pushes near 1 million. New words come from compounding (babysitter, ice cream), conversion (using a noun as a verb — 'to email', 'to text'), affixation (-ness, un-, -able), Greek/Latin neologisms (television, optometry), and acronyms that became words (laser, scuba, NATO).",
+    },
+    {
+      id: "word-origins",
+      title: "Word origins",
+      keywords: ["origin", "french", "latin", "germanic", "loanword"],
+      body: "By count, the English lexicon is roughly 28% French (Norman + later French), 28% Latin (often via science and law), 25% Germanic (Old English, Old Norse, Dutch), 5% Greek, with the rest from everywhere else. But Germanic words dominate everyday speech — most of the 100 most common English words are Anglo-Saxon. Formal/legal/scientific registers lean Latinate; casual speech leans Germanic.",
+    },
+    {
+      id: "orthography",
+      title: "Orthography (spelling)",
+      keywords: ["orthography", "spelling", "alphabet", "irregular"],
+      body: "English uses the 26-letter Latin alphabet. Spelling is famously irregular because the standard was fixed before the Great Vowel Shift completed, French/Latin/Greek loans kept their original spellings, and there's no language academy to enforce reform. Consonant correspondence is fairly reliable; vowel correspondence is chaotic. British and American spellings differ systematically (colour/color, centre/center, organise/organize).",
+    },
+    {
+      id: "british-dialects",
+      title: "British dialects",
+      keywords: ["british", "rp", "cockney", "geordie", "scouse", "yorkshire"],
+      body: "Major English-of-England dialects: Received Pronunciation (the prestige standard), Cockney (working-class London — h-dropping, glottal stops, th-fronting), Estuary English (modern London-area mix), West Country (rhotic, southwest), Yorkshire (Northern, retains Norse features), Geordie (Newcastle), Scouse (Liverpool), Brummie (Birmingham). Scotland has Scots (a sister language) and Scottish Standard English.",
+    },
+    {
+      id: "american-dialects",
+      title: "American dialects",
+      keywords: ["american", "ga", "southern", "aave", "new york", "boston"],
+      body: "General American is the relatively neutral standard heard in broadcasting. Major regional/social varieties: Southern American English (rhotic now, distinctive vowel shift, 'y'all'), New York City English (historically non-rhotic, 'cawfee' for coffee), Boston/Eastern New England (also non-rhotic, 'pahk the cah'), African-American Vernacular English (AAVE — coherent grammar with copula deletion, habitual 'be', double negatives), Chicano English, Cajun English.",
+    },
+    {
+      id: "other-varieties",
+      title: "Other major varieties",
+      keywords: ["australian", "new zealand", "indian", "south african", "nigerian"],
+      body: "Australian English: non-rhotic, distinctive raised/fronted vowels, 'arvo' for afternoon, etc. New Zealand English: similar to Australian but with even higher front vowels ('fish and chips' sounds like 'fush and chups'). Indian English: tends toward RP as ideal, retroflex /t d/, dental /θ ð/ replaced by /t̪ d̪/, distinctive vocabulary. South African English: non-rhotic, no intrusive R. Nigerian English: 150M+ speakers, increasingly American-influenced.",
+    },
+    {
+      id: "pitfalls",
+      title: "Common pitfalls (for learners)",
+      keywords: ["pitfall", "learner", "difficult", "mistake"],
+      body: "The hard parts of English for learners: phrasal verbs (look up / look out / look after — wildly idiomatic), articles (a/an/the — many languages don't have them), spelling and pronunciation mismatch, irregular verb forms (sing/sang/sung, but bring/brought/brought), the perfect aspect ('I have lived here for 5 years' vs 'I lived there for 5 years'), prepositions ('on Monday' but 'in March' but 'at noon'), and informal contractions (gonna, wanna, kinda, dunno).",
+    },
+    {
+      id: "where-english-shines",
+      title: "Why study English",
+      keywords: ["why", "learn", "use", "global", "career"],
+      body: "Pragmatic reasons most people learn English: it's the dominant language of international science (>80% of journal articles), business, aviation, the internet, software documentation, and most universities globally. Working knowledge is required in many professions (medicine, computing, engineering). The flexibility of register — from very formal Latinate prose to very casual Germanic-rooted speech — makes it adaptable to nearly any context.",
+    },
+  ],
+};
