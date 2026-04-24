@@ -40,7 +40,16 @@ import { lispArticle }         from "../modules/knowledge/articles/lisp.js";
 import { visualBasicArticle }  from "../modules/knowledge/articles/visual-basic.js";
 import { fortranArticle }      from "../modules/knowledge/articles/fortran.js";
 import { englishArticle }      from "../modules/knowledge/articles/english.js";
-import { codingWisdomArticle } from "../modules/knowledge/articles/coding-wisdom.js";
+import { codingWisdomArticle }     from "../modules/knowledge/articles/coding-wisdom.js";
+import { algorithmsArticle }       from "../modules/knowledge/articles/algorithms.js";
+import { webFundamentalsArticle }  from "../modules/knowledge/articles/web-fundamentals.js";
+import { systemDesignArticle }     from "../modules/knowledge/articles/system-design.js";
+import { securityArticle }         from "../modules/knowledge/articles/security.js";
+import { designPatternsArticle }   from "../modules/knowledge/articles/design-patterns.js";
+import { uiUxDesignArticle }       from "../modules/knowledge/articles/ui-ux-design.js";
+import { business101Article }      from "../modules/knowledge/articles/business-101.js";
+import { productDevelopmentArticle } from "../modules/knowledge/articles/product-development.js";
+import { aiMlArticle }             from "../modules/knowledge/articles/ai-ml.js";
 
 import { mountTools }     from "./tools.js";
 import { mountWorkspace } from "./workspace.js";
@@ -80,6 +89,15 @@ knowledgeBase.addArticle(visualBasicArticle);
 knowledgeBase.addArticle(fortranArticle);
 knowledgeBase.addArticle(englishArticle);
 knowledgeBase.addArticle(codingWisdomArticle);
+knowledgeBase.addArticle(algorithmsArticle);
+knowledgeBase.addArticle(webFundamentalsArticle);
+knowledgeBase.addArticle(systemDesignArticle);
+knowledgeBase.addArticle(securityArticle);
+knowledgeBase.addArticle(designPatternsArticle);
+knowledgeBase.addArticle(uiUxDesignArticle);
+knowledgeBase.addArticle(business101Article);
+knowledgeBase.addArticle(productDevelopmentArticle);
+knowledgeBase.addArticle(aiMlArticle);
 
 // 2. Register built-in tools.
 registry.registerTool({
