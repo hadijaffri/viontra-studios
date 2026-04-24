@@ -36,7 +36,9 @@ export function mountChat(host) {
   const box      = host.querySelector("#chat-text");
   const send     = host.querySelector("#chat-send");
   const mic      = host.querySelector(".mic-btn");
-  let active = CAPS[2]; // default: Code
+  // Default to the Build tab — it has 15 runnable templates and guarantees
+  // that "code me a flight sim" style prompts produce working code.
+  let active = CAPS.find(c => c.id === "composer") || CAPS[2];
 
   function showStatus(text) {
     statusEl.textContent = text;
