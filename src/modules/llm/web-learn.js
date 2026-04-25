@@ -5,12 +5,11 @@
 // retrain the model, but we can feed it real web content at every prompt.
 
 import { duckduckgo }    from "../browser/providers/duckduckgo.js";
-import { brave }         from "../browser/providers/brave.js";
 import { serpapi }       from "../browser/providers/serpapi.js";
 import { getSettings }   from "../../ui/settings.js";
 import { knowledgeBase } from "../knowledge/knowledge.js";
 
-const PROVIDERS = { duckduckgo, brave, serpapi };
+const PROVIDERS = { duckduckgo, serpapi };
 
 // Run a quick search via the user's selected provider. Returns up to `limit`
 // {title, url, snippet} hits. Errors swallowed — web context is best-effort.

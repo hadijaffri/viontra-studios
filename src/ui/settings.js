@@ -47,13 +47,12 @@ export function mountSettings(host) {
           <section>
             <label for="set-provider">Search provider</label>
             <select id="set-provider">
-              <option value="duckduckgo">DuckDuckGo (no key)</option>
-              <option value="brave">Brave Search</option>
-              <option value="serpapi">SerpAPI</option>
+              <option value="duckduckgo">DuckDuckGo (free, no key)</option>
+              <option value="serpapi">SerpAPI (paid, key required)</option>
             </select>
           </section>
           <section>
-            <label for="set-key">Search API key</label>
+            <label for="set-key">Search API key (only needed for SerpAPI)</label>
             <input id="set-key" type="password" placeholder="Paste key — stored locally only" />
           </section>
           <section>

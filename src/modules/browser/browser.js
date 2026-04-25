@@ -5,10 +5,9 @@
 import { bus } from "../../core/bus.js";
 import { getSettings } from "../../ui/settings.js";
 import { duckduckgo } from "./providers/duckduckgo.js";
-import { brave }      from "./providers/brave.js";
 import { serpapi }    from "./providers/serpapi.js";
 
-const PROVIDERS = { duckduckgo, brave, serpapi };
+const PROVIDERS = { duckduckgo, serpapi };
 
 export function mountBrowser(host) {
   host.innerHTML = `
