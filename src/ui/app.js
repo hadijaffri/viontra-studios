@@ -15,6 +15,7 @@ import { frontendRole }    from "../roles/frontend.js";
 import { knowledgeRole }   from "../roles/knowledge.js";
 import { composerRole }    from "../roles/composer.js";
 import { localLLMRole }    from "../roles/local-llm.js";
+import { claudeRole }      from "../roles/claude.js";
 
 import { composer }     from "../modules/composer/composer.js";
 import { allTemplates } from "../modules/composer/templates/index.js";
@@ -57,11 +58,12 @@ import { mountChat }      from "./chat.js";
 import { mountStudio }    from "./studio.js";
 import { mountSettings }  from "./settings.js";
 import { mountTutorial }  from "./tutorial.js";
+import { mountPanelToggle } from "./panel-toggle.js";
 
 // 1. Register AI roles — the 6 agent capabilities plus knowledge, composer, local LLM, and two legacy roles.
 [
   voiceRole, thinkingRole, coderRole, testerRole, logoDesignRole, frontendRole,
-  knowledgeRole, composerRole, localLLMRole, designerRole, gameRole,
+  knowledgeRole, composerRole, localLLMRole, claudeRole, designerRole, gameRole,
 ].forEach(r => registry.registerRole(r));
 
 // 1b. Load composer templates.
@@ -123,3 +125,6 @@ bus.emit("status", "ready");
 
 // 6. First-run tutorial (cookie-gated).
 mountTutorial();
+
+// 7. Panel close (X) + reopen bar.
+mountPanelToggle();
