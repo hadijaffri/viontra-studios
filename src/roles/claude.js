@@ -8,7 +8,7 @@ import { bus }                     from "../core/bus.js";
 
 export const claudeRole = {
   id: "claude",
-  label: "Claude",
+  label: "AI Pro",
 
   async handle(text) {
     bus.emit("llm.generating", { prompt: text, via: "claude-api" });

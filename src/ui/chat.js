@@ -14,8 +14,7 @@ const CAPS = [
   { id: "frontend", label: "Frontend",  icon: "▥",  role: "frontend" },
   { id: "knowledge", label: "Learn",    icon: "📖", role: "knowledge" },
   { id: "composer",  label: "Build",    icon: "🛠", role: "composer" },
-  { id: "local-llm", label: "AI Pro",   icon: "✨", role: "local-llm" },
-  { id: "claude",    label: "Claude",   icon: "★",  role: "claude" },
+  { id: "claude",    label: "AI Pro",   icon: "✨", role: "claude" },
 ];
 
 export function mountChat(host) {
@@ -97,9 +96,11 @@ export function mountChat(host) {
     if (!text) return;
     box.value = "";
     append("user", { text });
-    // LLM calls can take many seconds / minutes; bump timeout for those roles.
-    const isLlm = active.role === "local-llm" || active.role === "claude";
-    const timeoutMs = isLlm ? 5 * 60 * 1000 : 5000;
+    // LLM calls can take many seconds; bump timeout for those roles.
+    // Composer also gets the long timeout since it falls back to Claude when
+    // no template matches.
+    const longRunning = ["claude", "composer", "local-llm"].includes(active.role);
+    const timeoutMs = longRunning ? 5 * 60 * 1000 : 5000;
     const reply = await bus.request("ai.prompt", { text, role: active.role }, { timeoutMs });
     append(reply.role || "ai", reply);
     if (reply.action?.kind === "load-editor" && reply.code) {
